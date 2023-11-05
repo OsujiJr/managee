@@ -1,0 +1,241 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+/*  UTILITY CLASSES */
+.contain{
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+.flex-row{
+    display: flex;
+}
+.spacearound{
+    justify-content: space-around;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.centered{
+    align-items: center;
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.pad1rem{
+    padding: 1rem;
+}
+.pad2rem{
+    padding: 2rem;
+}
+.font-L{
+    font-size: 40px;
+}
+.font-M{
+    font-size: 20px;
+}
+.font-S{
+    font-size: 16px;
+}
+.position-relative{
+    position: relative;
+}
+.grdnt-color{
+    background-image: linear-gradient(#9254F4, #E06ACA);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.border{
+    border: 2px solid red;
+}
+.grdnt-bg{
+    background-image: linear-gradient(to right, #9254F4, #E06ACA);
+}
+.grid-container{
+    display: grid;
+}
+.col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.gap-5{
+    gap: 0.5rem;
+}
+.gap-3{
+    gap: 0.3rem;
+}
+.gap1{
+    gap: 1rem;
+}
+.gap2{
+    gap: 2rem;
+}
+.bold-text{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.bold-text-1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.rad1{
+    height: 3rem;
+    width: 7rem;
+    background-color:#1E202D;
+    border-radius: 1.5rem;
+    align-self: center;
+}
+.al-center{
+    align-items: center;
+}
+.justify-content{
+    justify-content: center;
+}
+.rad2{
+    height: 3rem;
+    width: 8rem;
+    background-color:#1E202D;
+    border-radius: 1.5rem;
+    align-self: center;
+}
+.border-card-clr{
+    border: 3px solid #0C101C;
+    height: 44rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #0C101C; 
+    max-width: 27rem;
+}
+.border-card-gradient{
+    background: linear-gradient(#030A12, #030A12) padding-box,
+    linear-gradient(to left, #9254F4, #E06ACA) border-box;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    max-width: 27rem;
+    box-shadow: 0 0 5px #0C101C; 
+    height: 44rem;
+}  
+.contain{
+    max-width: 1440px;
+}
+html{
+    font-family: Poppins;
+}
+body{
+    background-color: #030A12;
+    color: #FFFFFF;
+}
+.price-cont{
+    height: 3rem;
+    width: 10rem;
+    margin: auto;
+    background-color: #0E101E;
+    border-radius: 1.5rem;
+    border: 0.5px solid #101522;
+}
+.cards{
+    padding: 2rem;
+}
+.hero{
+    padding: 2rem;
+}
+.card-benefits{
+    margin: 0.5rem 2rem 1rem 2rem;
+    border-top: 2px solid #101522;
+    padding-top: 2rem;
+}
+.plan-btn {
+    position: absolute;
+    bottom: 4%;
+    height: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 22rem;
+    background-color:#1E202D;
+    border-radius: 30px;
+}
+.get-started{
+    height: 30rem;
+    background-image: linear-gradient(rgba(3, 10, 18, 0.8), rgba(3, 10, 18, 0.98)), url(static/images/project-management-web-app-cover.webp);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid rgba(3, 10, 18, 0.9);
+}
+.get-started-btn{
+    height: 3rem;
+    width: 12rem;
+    background-color: #1E202D;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(3, 10, 18, 0.4);
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.toggle-switch{
+    position: relative;
+    width: 4.6rem;
+    height: 2.1rem;
+}
+.toggle-switch input{
+    appearance: none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #9669F7;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.toggle-switch input:checked + .slider {
+    background-color: #1E202D;
+}
+.toggle-switch input:checked + .slider::before {
+    transform: translateX(40px);
+} 
+.toggle-switch input:checked + .slider + .label-1 + .label-2{
+    color: #9669F7; 
+}
+.toggle-switch input:not(:checked) + .slider + .label-1{
+    color: #9669F7; 
+}
+.label-1{
+    position: absolute;
+    right: 5rem; 
+    font-size: 18px;
+    padding-top: 0.37rem ;
+}
+.label-2{
+    position: absolute;
+    left: 5rem;
+    font-size: 18px;
+    padding-top: 0.37rem ;
+}
+.plans{
+    margin-top: -5rem;
+}
+
+      
